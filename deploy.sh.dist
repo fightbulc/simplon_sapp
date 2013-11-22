@@ -1,8 +1,8 @@
 #!/bin/bash
 
 USER='root'
-HOST='5.9.123.249'
-REMOTEPATH='/home/www/beatguide/live/service/v3_efes'
+HOST='127.0.0.1'
+REMOTEPATH='/remote/path'
 EXCLUDE='./deploy-exclude.txt'
 TARGET="$USER@$HOST:$REMOTEPATH"
 
