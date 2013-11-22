@@ -32,7 +32,8 @@
         "fightbulc/jsonrpc_curl": "0.5.*",
         "fightbulc/moment": "1.2.*",
         "ircmaxell/password-compat": "1.0.*",
-        "Respect/Validation": "0.4.*"
+        "Respect/Validation": "0.4.*",
+        "symfony/console": "2.3.*"
     },
 
     "require-dev": {
