@@ -1,2 +1,4 @@
 /vendor/*
 /app/config/common.config.php
+composer.lock
+deploy.dist
