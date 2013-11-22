@@ -1,4 +1,7 @@
+.idea/*
 /vendor/*
+/tests/_cache/*
+/tests/_log/*
 /app/config/common.config.php
 composer.lock
-deploy.dist
+deploy.sh
