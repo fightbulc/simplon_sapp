@@ -1,0 +1,49 @@
+{
+    "name": "simplon/sapp",
+    "description": "Skeleton for service apps",
+    "homepage": "https://github.com/fightbulc/simplon_sapp",
+    "version": "0.0.1",
+    "type": "library",
+    "keywords": ["skeleton", "backend", "service", "jsonrpc", "testing"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tino Ehrich",
+            "email": "tino@beatguide.me",
+            "role": "developer"
+        }
+    ],
+
+    "config": {
+        "bin-dir": "bin/"
+    },
+
+    "minimum-stability": "dev",
+
+    "require": {
+        "ext-json": "*",
+        "php": ">=5.4",
+        "simplon/config": "0.6.*",
+        "simplon/jr": "0.6.*",
+        "simplon/db": "1.2.*",
+        "simplon/signr": "0.6.*",
+        "simplon/task": "0.5.*",
+        "simplon/helper": "0.6.*",
+        "fightbulc/jsonrpc_curl": "0.5.*",
+        "fightbulc/moment": "1.2.*",
+        "ircmaxell/password-compat": "1.0.*",
+        "Respect/Validation": "0.4.*"
+    },
+
+    "require-dev": {
+        "fightbulc/codeception": "dev-master",
+        "codeception/aspect-mock": "0.4.*"
+    },
+
+    "autoload": {
+        "psr-0": {
+            "Service": "app/php/",
+            "Task": "app/php/"
+        }
+    }
+}

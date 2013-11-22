@@ -1,0 +1,57 @@
+#!/bin/bash
+
+USER='root'
+HOST='5.9.123.249'
+REMOTEPATH='/home/www/beatguide/live/service/v3_efes'
+EXCLUDE='./deploy-exclude.txt'
+TARGET="$USER@$HOST:$REMOTEPATH"
+
+#
+# clear screen
+#
+clear
+
+#
+# composer
+#
+composer update
+composer dump-autoload --optimize
+
+#
+# deploy to server
+#
+if [ ! -f $EXCLUDE ] ; then
+  echo "";
+  echo "-- FAIL --";
+  echo "make sure you are in the right directory and 'deploy-exclude.txt' is there!";
+  echo "";
+  echo "chdir to top of current project path!";
+  echo "";
+  exit;
+fi
+
+echo "";
+echo "----------------- CHANGES ------------------";
+rsync --delete -ain --exclude-from=$EXCLUDE . $TARGET | grep '<'
+
+echo "";
+echo "----------------- TRANSFER -----------------";
+echo "";
+echo -n "All cool, should we proceed? Yes/No: "
+read YESNO
+
+if test \! "yes" = "$YESNO"
+then
+    echo ""
+    echo "TRANSFER ABORTED"
+    echo "Bye bye!"
+    echo ""
+    exit 0
+fi
+
+rsync --delete -ai --exclude-from=$EXCLUDE . $TARGET
+
+echo ""
+echo "------------------- DONE -------------------";
+echo "Bye bye!"
+echo ""

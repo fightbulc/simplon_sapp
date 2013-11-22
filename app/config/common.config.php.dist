@@ -1,0 +1,29 @@
+<?php
+
+    $app = [
+        'environment' => 'local',
+
+        // --------------------------------------
+
+        'urls'        => [
+            'service'  => 'http://service.com',
+            'frontend' => 'http://frontend.com',
+        ],
+
+        // --------------------------------------
+
+        'database'    => [
+            'mysql' => [
+                [
+                    'server'   => 'localhost',
+                    'database' => 'service',
+                    'username' => 'rootuser',
+                    'password' => 'rootuser'
+                ]
+            ],
+        ],
+
+        // --------------------------------------
+
+        'thirdParty'  => [],
+    ];
