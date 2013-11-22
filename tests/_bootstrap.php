@@ -9,7 +9,7 @@
         'appDir'             => __DIR__ . '/..',
 
         // cached php files
-        'cacheDir'           => __DIR__ . '/_data/cache',
+        'cacheDir'           => __DIR__ . '/_cache',
 
         // apply aspect on files in these directories
         'includePaths'       => [
