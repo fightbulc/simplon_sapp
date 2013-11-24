@@ -3,8 +3,8 @@ paths:
         
 environments:
     default_migration_table: util_phinxlog
-    default_database: local
-    local:
+    default_database: devel
+    devel:
         adapter: mysql
         host: localhost
         name: beatguide_local_service
