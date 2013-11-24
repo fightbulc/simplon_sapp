@@ -29,7 +29,8 @@
         "fightbulc/moment": "1.2.*",
         "ircmaxell/password-compat": "1.0.*",
         "Respect/Validation": "0.4.*",
-        "symfony/console": "2.3.*"
+        "symfony/console": "2.3.*",
+        "robmorgan/phinx": "0.2.*"
     },
 
     "require-dev": {
