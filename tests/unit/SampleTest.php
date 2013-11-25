@@ -2,7 +2,9 @@
 
     namespace Test;
 
-    class SampleTest extends \Codeception\TestCase\Test
+    use Codeception\TestCase\Test;
+
+    class SampleTest extends Test
     {
         /**
          * @var \Test\CodeGuy
