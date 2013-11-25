@@ -5,3 +5,4 @@
 /app/config/common.config.php
 composer.lock
 deploy.sh
+phinx.yml
