@@ -16,6 +16,17 @@
 
     "minimum-stability": "dev",
 
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/fightbulc/phinx"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/fightbulc/Codeception"
+        }
+    ],
+
     "require": {
         "ext-json": "*",
         "php": ">=5.4",
@@ -30,11 +41,11 @@
         "ircmaxell/password-compat": "1.0.*",
         "Respect/Validation": "0.4.*",
         "symfony/console": "2.3.*",
-        "robmorgan/phinx": "0.2.*"
+        "robmorgan/phinx": "dev-master"
     },
 
     "require-dev": {
-        "fightbulc/codeception": "dev-master",
+        "codeception/codeception": "dev-jsonrpc",
         "codeception/aspect-mock": "0.4.*"
     },
 
